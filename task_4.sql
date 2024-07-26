@@ -1,4 +1,4 @@
--- Query to get full description of the 'books' table from the specified database
+-- Query to get full description of the 'books' table from the 'alx_book_store' database
 
 SELECT
     COLUMN_NAME AS 'Column Name',
@@ -9,6 +9,6 @@ SELECT
 FROM
     INFORMATION_SCHEMA.COLUMNS
 WHERE
-    TABLE_SCHEMA = DATABASE()   -- Use the current database
+    TABLE_SCHEMA = 'alx_book_store'   -- Specify the database
     AND TABLE_NAME = 'Books';
 
